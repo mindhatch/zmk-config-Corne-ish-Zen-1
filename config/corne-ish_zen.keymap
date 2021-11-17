@@ -42,7 +42,7 @@
                 &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp Y &kp O     &kp U   &kp SEMI        &none
                 &none   &kp R &kp S &kp T &kp L &kp M           &kp P &kp N &kp A     &kp I   &kp E           &none
                 &none   &kp W &kp G &kp B &kp H &kp V           &kp Z &kp F &kp COMMA &kp DOT &kp FSLH        &none
-                                &none &sl  navi  &skq LSHFT              &kp SPACE &kp SQT  &none
+                                &none &sl  navi  &skq LSHFT             &kp SPACE &kp SQT  &none
                         >;
                 };
 
@@ -52,7 +52,7 @@
                 &none   &kp LC(LS(Z)) &kp LC(LEFT) &kp TAB  &kp LC(RIGHT) &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE      &none
                 &none   &skq LSHFT    &kp LEFT     &kp UP   &kp RIGHT     &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq RSHFT     &none
                 &none   &skq LCTL     &kp DEL      &kp DOWN &kp BSPC      &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &skq LGUI      &none
-                                &trans &trans &trans                                    &kp SPACE &kp N0 &trans
+                                &trans &trans &trans                                                    &kp SPACE &kp N0 &trans
                         >;
                 };
         };
