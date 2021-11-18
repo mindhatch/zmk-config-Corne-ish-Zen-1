@@ -32,15 +32,15 @@
                 quick-release;
         };      
   }; 
-  
+
         keymap {
                 compatible = "zmk,keymap";      
 
                 default_layer {
                         label = " meow ";
                         bindings = <
-                &none   &kp X      &kp C &kp M &kp V &kp Q           &kp Z &kp Y &kp O   &kp U     &kp FSLH     &none
-                &none   &kp R      &kp S &kp T &kp H &kp K           &kp P &kp N &kp A   &kp I     &kp L        &none
+                &none   &kp X      &kp C &kp M &kp K &kp Q           &kp Z &kp Y &kp O   &kp U     &kp FSLH     &none
+                &none   &kp R      &kp S &kp T &kp H &kp V           &kp P &kp N &kp A   &kp I     &kp L        &none
                 &none   &skq LSHFT &kp W &kp G &kp D &kp B           &kp J &kp F &kp DOT &kp COMMA &skq RSHFT   &none
                                 &none &sl  navi  &kp E                  &kp SPACE &kp SQT &none
                         >;
