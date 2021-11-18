@@ -32,11 +32,9 @@
                 quick-release;
         };      
   }; 
-x c m v q  z f o u ;
-r s t h k  p n a i l
-/ w g d b  j y ' , . e
+  
         keymap {
-                compatible = "zmk,keymap";
+                compatible = "zmk,keymap";      
 
                 default_layer {
                         label = " meow ";
