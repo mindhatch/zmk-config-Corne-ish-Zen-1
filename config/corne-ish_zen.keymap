@@ -52,30 +52,30 @@
                 aptv23_layer {
                         label = "aptv23";
                         bindings = <
-                &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp Y &kp O     &kp U   &kp SEMI    &none
-                &none   &kp R &kp S &kp T &kp L &kp M           &kp P &kp N &kp A     &kp I   &kp E       &none
-                &none   &kp W &kp G &kp B &kp H &kp V           &kp Z &kp F &kp COMMA &kp DOT &kp FSLH    &none
-                                &none &sl  navi  &skq LSHFT             &kp SPACE &kp SQT &none
+                &none   &kp W      &kp G &kp D &kp H &kp V           &kp J &kp F &kp O   &kp U     &kp FSLH     &none
+                &none   &kp R      &kp S &kp T &kp L &kp M           &kp Y &kp N &kp A     &kp I   &kp C        &none
+                &none   &skq LSHFT &kp X &kp B &kp K &kp Q           &kp Z &kp P &kp DOT &kp COMMA &skq RSHFT   &none
+                                &none &trans &kp SPACE                       &kp E &kp SQT &none
                         >;
                 };
 
                 trendy_layer {
                         label = "trendy";
                         bindings = <
-                &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp Y &kp O     &kp U   &kp SEMI    &none
-                &none   &kp R &kp S &kp T &kp L &kp M           &kp P &kp N &kp A     &kp I   &kp E       &none
-                &none   &kp W &kp G &kp B &kp H &kp V           &kp Z &kp F &kp COMMA &kp DOT &kp FSLH    &none
-                                &none &sl  navi  &skq LSHFT             &kp SPACE &kp SQT &none
+                &none   &kp K &kp L &kp H &kp W &kp Z           &kp J &kp F &kp O   &kp U   &kp COMMA   &none
+                &none   &kp T &kp R &kp N &kp D &kp C           &kp Y &kp S &kp A   &kp E   &kp I       &none
+                &none   &kp Q &kp X &kp M &kp P &kp B           &kp G &kp V &kp DOT &kp SQT &kp FSLH    &none
+                                &none &trans &skq LSHFT             &kp SPACE &kp SQT &none
                         >;
                 };
 
                 srtn_layer {
                         label = " srtn ";
                         bindings = <
-                &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp Y &kp O     &kp U   &kp SEMI    &none
-                &none   &kp R &kp S &kp T &kp L &kp M           &kp P &kp N &kp A     &kp I   &kp E       &none
-                &none   &kp W &kp G &kp B &kp H &kp V           &kp Z &kp F &kp COMMA &kp DOT &kp FSLH    &none
-                                &none &sl  navi  &skq LSHFT             &kp SPACE &kp SQT &none
+                &none   &kp X &kp L &kp D &kp K &kp V           &kp Z &kp W &kp O   &kp U     &kp FSLH   &none
+                &none   &kp S &kp R &kp T &kp N &kp F           &kp G &kp Y &kp E   &kp I     &kp A      &none
+                &none   &kp Q &kp J &kp M &kp H &kp B           &kp P &kp C &kp SQT &kp COMMA &kp DOT    &none
+                                &none &trans &skq LSHFT             &kp SPACE &kp SQT &none
                         >;
                 };
 
