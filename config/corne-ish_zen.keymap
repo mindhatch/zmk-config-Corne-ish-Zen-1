@@ -34,6 +34,15 @@
                 release-after-ms = <1000>;
                 quick-release;
         };      
+                hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <150>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
   }; 
 
         keymap {
@@ -52,9 +61,9 @@
                 aptv23_layer {
                         label = "aptv23";
                         bindings = <
-                &none   &kp W      &kp G &kp D &kp H &kp V           &kp J &kp F &kp O   &kp U     &kp FSLH     &none
-                &none   &kp R      &kp S &kp T &kp L &kp M           &kp Y &kp N &kp A     &kp I   &kp C        &none
-                &none   &skq LSHFT &kp X &kp B &kp K &kp Q           &kp Z &kp P &kp DOT &kp COMMA &skq RSHFT   &none
+                &none   &kp X    &kp W &kp D       &kp L &kp V           &kp J &kp F &kp O       &kp U     &kp SEMI     &none
+                &none   &kp R    &kp S &hm LSHFT T &kp H &kp M           &kp Y &kp N &hm RSHFT A &kp I     &kp C        &none
+                &none   &kp FSLH &kp G &kp B       &kp K &kp Q           &kp Z &kp P &kp QUOT    &kp COMMA &kp DOT      &none
                                 &none &trans &kp SPACE                       &kp E &kp SQT &none
                         >;
                 };
