@@ -42,8 +42,8 @@
                 default_layer {
                         label = " meow ";
                         bindings = <
-                &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp Y &kp O     &kp U   &kp SEMI    &none
-                &none   &kp R &kp S &kp T &kp L &kp M           &kp P &kp N &kp A     &kp I   &kp E       &none
+                &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp P &kp O     &kp U   &kp SEMI    &none
+                &none   &kp R &kp S &kp T &kp L &kp M           &kp Y &kp N &kp A     &kp I   &kp E       &none
                 &none   &kp W &kp G &kp B &kp H &kp V           &kp Z &kp F &kp COMMA &kp DOT &kp FSLH    &none
                                 &none &sl  navi  &skq LSHFT             &kp SPACE &kp SQT &none
                         >;
