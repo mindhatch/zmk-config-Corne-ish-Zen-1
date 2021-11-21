@@ -64,7 +64,7 @@
                         bindings = <
                 &none   &kp K &kp L &kp H &kp W &kp Z           &kp J &kp F &kp O   &kp U   &kp COMMA   &none
                 &none   &kp T &kp R &kp N &kp D &kp C           &kp Y &kp S &kp A   &kp E   &kp I       &none
-                &none   &kp Q &kp X &kp M &kp P &kp B           &kp G &kp V &kp DOT &kp SQT &kp FSLH    &none
+                &none   &kp Q &kp X &kp M &kp P &kp B           &kp V &kp G &kp DOT &kp SQT &kp FSLH    &none
                                 &none &trans &skq LSHFT             &kp SPACE &kp SQT &none
                         >;
                 };
