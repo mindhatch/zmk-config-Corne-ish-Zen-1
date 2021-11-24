@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  meow  0
-#define aptv23 1
+#define  neu   1
 #define trendy 2
 #define  srtn  3
 #define  navi  4
@@ -49,13 +49,13 @@
                         >;
                 };
 
-                aptv23_layer {
-                        label = "aptv23";
+                neu_layer {
+                        label = "neu";
                         bindings = <
-                &none   &kp X      &kp W &kp D &kp L &kp V           &kp J &kp F &kp O   &kp U     &kp FSLH     &none
-                &none   &kp R      &kp S &kp T &kp H &kp M           &kp Y &kp N &kp A   &kp I     &kp C        &none
-                &none   &skq LSHFT &kp G &kp B &kp K &kp Q           &kp Z &kp P &kp DOT &kp COMMA &skq RSHFT   &none
-                                &none &trans &kp SPACE                       &kp E &kp SQT &none
+                &none   &kp W &kp F &kp M &kp P &kp V           &kp SEMI  &kp DOT &kp FSLH &kp Q &kp GRAVE         &none
+                &none   &kp R &kp S &kp N &kp T &kp G           &kp COMMA &kp A   &kp E    &kp I &kp H           &none
+                &none   &kp X &kp C &kp L &kp D &kp B           &kp MINUS &kp U   &kp O    &kp Y &kp K           &none
+                                &none &trans &trans                         &trans &trans &none
                         >;
                 };
 
@@ -65,7 +65,7 @@
                 &none   &kp K &kp L &kp H &kp W &kp Z           &kp J &kp F &kp O   &kp U   &kp COMMA   &none
                 &none   &kp T &kp R &kp N &kp D &kp C           &kp Y &kp S &kp A   &kp E   &kp I       &none
                 &none   &kp Q &kp X &kp M &kp P &kp B           &kp V &kp G &kp DOT &kp SQT &kp FSLH    &none
-                                &none &trans &skq LSHFT             &kp SPACE &kp SQT &none
+                                &none &trans &trans                     &trans &trans &none
                         >;
                 };
 
@@ -75,7 +75,7 @@
                 &none   &kp X &kp L &kp D &kp K &kp V           &kp Z &kp W &kp O   &kp U     &kp FSLH   &none
                 &none   &kp S &kp R &kp T &kp N &kp F           &kp G &kp Y &kp E   &kp I     &kp A      &none
                 &none   &kp Q &kp J &kp M &kp H &kp B           &kp P &kp C &kp SQT &kp COMMA &kp DOT    &none
-                                &none &trans &skq LSHFT             &kp SPACE &kp SQT &none
+                                &none &trans &trans                     &trans &trans &none
                         >;
                 };
 
@@ -85,7 +85,7 @@
                 &none   &kp LC(LS(Z)) &kp LC(LEFT) &kp TAB  &kp LC(RIGHT) &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
                 &none   &skq LSHFT    &kp LEFT     &kp UP   &kp RIGHT     &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq RSHFT   &none
                 &none   &skq LCTL     &kp DEL      &kp DOWN &kp BSPC      &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &skq LGUI    &none
-                                &trans &trans &trans                                                    &kp SPACE &kp N0 &trans
+                                &trans &trans &trans                                                    &trans &trans &trans
                         >;
                 };
         };
