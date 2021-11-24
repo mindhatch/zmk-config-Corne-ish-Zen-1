@@ -8,8 +8,7 @@ compatible = "zmk,combos";
     timeout-ms = <MS>; \
   };
 
-COMBO(z, &kp Z, 1 2, neu, 20)
-COMBO(j, &kp J, 2 3, neu, 20)
+COMBO(j, &kp J, 26 27, neu, 20)
 COMBO(lpar, &kp LPAR, 4 16, meow navi neu trendy srtn, 20)
 COMBO(rpar, &kp RPAR, 7 19, meow navi neu trendy srtn, 20)
 COMBO(lbrc, &kp LBRC, 3 15, meow navi neu trendy srtn, 20)

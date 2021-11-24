@@ -52,7 +52,7 @@
                 neu_layer {
                         label = "neu";
                         bindings = <
-                &none   &kp W &kp F &kp M &kp P &kp V           &kp SEMI  &kp DOT &kp FSLH &kp Q &kp GRAVE         &none
+                &none   &kp W &kp F &kp M &kp P &kp V           &kp Z     &kp DOT &kp FSLH &kp Q &kp GRAVE         &none
                 &none   &kp R &kp S &kp N &kp T &kp G           &kp COMMA &kp A   &kp E    &kp I &kp H           &none
                 &none   &kp X &kp C &kp L &kp D &kp B           &kp MINUS &kp U   &kp O    &kp Y &kp K           &none
                                 &none &trans &trans                         &trans &trans &none
