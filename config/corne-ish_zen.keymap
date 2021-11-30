@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  meow  0
-#define  susl 1
-#define  sush 2
+#define  susl  1
+#define  sush  2
 #define  navi  3
 
 &sk {
