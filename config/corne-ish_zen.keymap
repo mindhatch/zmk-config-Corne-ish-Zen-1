@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  meow  0
-#define  sus-l 1
-#define  sus-h 2
+#define  susl 1
+#define  sush 2
 #define  navi  3
 
 &sk {
@@ -49,7 +49,7 @@
                 };
 
                 susl_layer {
-                        label = " sus-l ";
+                        label = " susl ";
                         bindings = <
                 &none   &kp X &kp C &kp H &kp G &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
                 &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp L        &none
@@ -59,7 +59,7 @@
                 };
 
                 sush_layer {
-                        label = " sus-h ";
+                        label = " sush ";
                         bindings = <
                 &none   &kp X &kp C &kp L &kp D &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
                 &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp H        &none
