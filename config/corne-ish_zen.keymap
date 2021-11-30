@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  meow  0
-#define  neu   1
+#define  sus   1
 #define trendy 2
 #define  srtn  3
 #define  navi  4
@@ -49,12 +49,12 @@
                         >;
                 };
 
-                neu_layer {
-                        label = "neu";
+                sus_layer {
+                        label = " sus ";
                         bindings = <
-                &none   &kp W &kp F &kp M &kp P &kp V           &kp Z     &kp DOT &kp FSLH &kp Q &kp GRAVE         &none
-                &none   &kp R &kp S &kp N &kp T &kp G           &kp COMMA &kp A   &kp E    &kp I &kp H           &none
-                &none   &kp X &kp C &kp L &kp D &kp B           &kp MINUS &kp U   &kp O    &kp Y &kp K           &none
+                &none   &kp X &kp C &kp H &kp G &kp V           &kp Z     &kp U     &kp O    &kp Y &kp Q         &none
+                &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT   &kp A     &kp E    &kp I &kp L           &none
+                &none   &kp W &kp F &kp N &kp D &kp B           &kp MINUS &kp COMMA &kp FSLH &kp J &kp K           &none
                                 &none &trans &trans                         &trans &trans &none
                         >;
                 };
