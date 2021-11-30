@@ -10,10 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  meow  0
-#define  sus   1
-#define trendy 2
-#define  srtn  3
-#define  navi  4
+#define  sus-l 1
+#define  sus-h 2
+#define  navi  3
 
 &sk {
   release-after-ms = <2000>;
@@ -49,8 +48,8 @@
                         >;
                 };
 
-                sus_layer {
-                        label = " sus ";
+                susl_layer {
+                        label = " sus-l ";
                         bindings = <
                 &none   &kp X &kp C &kp H &kp G &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
                 &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp L        &none
@@ -59,23 +58,13 @@
                         >;
                 };
 
-                trendy_layer {
-                        label = "trendy";
+                sush_layer {
+                        label = " sus-h ";
                         bindings = <
-                &none   &kp K &kp L &kp H &kp W &kp Z           &kp J &kp F &kp O   &kp U   &kp COMMA   &none
-                &none   &kp T &kp R &kp N &kp D &kp C           &kp Y &kp S &kp A   &kp E   &kp I       &none
-                &none   &kp Q &kp X &kp M &kp P &kp B           &kp V &kp G &kp DOT &kp SQT &kp FSLH    &none
-                                &none &trans &trans                     &trans &trans &none
-                        >;
-                };
-
-                srtn_layer {
-                        label = " srtn ";
-                        bindings = <
-                &none   &kp X &kp L &kp D &kp K &kp V           &kp Z &kp W &kp O   &kp U     &kp FSLH   &none
-                &none   &kp S &kp R &kp T &kp N &kp F           &kp G &kp Y &kp E   &kp I     &kp A      &none
-                &none   &kp Q &kp J &kp M &kp H &kp B           &kp P &kp C &kp SQT &kp COMMA &kp DOT    &none
-                                &none &trans &trans                     &trans &trans &none
+                &none   &kp X &kp C &kp L &kp D &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
+                &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp H        &none
+                &none   &kp W &kp F &kp M &kp G &kp B           &kp K   &kp COMMA &kp FSLH &kp J &kp MINUS    &none
+                                &none &trans &trans                         &trans &trans &none
                         >;
                 };
 
