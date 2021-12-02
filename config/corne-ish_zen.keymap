@@ -21,20 +21,20 @@
 / {
 
         combos {
-                #include "combos.dtsi"
-        };
+                include "combos.dtsi"
+                };
 
         behaviors {
                 skq: sticky_key_quick_release {
-                compatible = "zmk,behavior-sticky-key";
-                label = "STICKY_KEY_QUICK_RELEASE";
-                #binding-cells = <1>;
-                bindings = <&kp>;
-                release-after-ms = <1000>;
-                quick-release;
-        };
-  }; 
-
+                  compatible = "zmk,behavior-sticky-key";
+                  label = "STICKY_KEY_QUICK_RELEASE";
+                  #binding-cells = <1>;
+                  bindings = <&kp>;
+                  release-after-ms = <1000>;
+                  quick-release;
+               };
+        }; 
+  
         keymap {
                 compatible = "zmk,keymap";      
 
@@ -51,10 +51,10 @@
                 susl_layer {
                         label = " susl ";
                         bindings = <
-                &none   &kp X &kp C &kp H &kp G &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
-                &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp L        &none
-                &none   &kp W &kp F &kp M &kp D &kp B           &kp K   &kp COMMA &kp FSLH &kp J &kp MINUS    &none
-                                &none &trans &trans                         &trans &trans &none
+                &none   &kp J      &kp B &kp D &kp C &kp W           &kp X   &kp U     &kp O    &kp Y     &kp Q        &none
+                &none   &kp R      &kp N &kp T &kp S &kp F           &kp DOT &kp A     &kp E    &kp I     &kp H        &none
+                &none   &skq LSHFT &kp P &kp M &kp G &kp V           &kp K   &kp COMMA &kp FSLH &kp MINUS &skq RSHFT   &none
+                                &none &trans &kp L                             &trans &trans &none
                         >;
                 };
 
@@ -64,16 +64,16 @@
                 &none   &kp X &kp C &kp L &kp G &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
                 &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp H        &none
                 &none   &kp W &kp F &kp M &kp D &kp B           &kp K   &kp COMMA &kp FSLH &kp J &kp MINUS    &none
-                                &none &trans &trans                         &trans &trans &none
+                                &none &trans &skq LSHFT                   &trans &trans &none
                         >;
                 };
 
                 navi_layer {
                         label = " navi ";
                         bindings = <
-                &none   &kp LC(LS(Z)) &kp LC(LEFT) &kp TAB  &kp LC(RIGHT) &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
-                &none   &skq LSHFT    &kp LEFT     &kp UP   &kp RIGHT     &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq RSHFT   &none
-                &none   &skq LCTL     &kp DEL      &kp DOWN &kp BSPC      &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &skq LGUI    &none
+                &none   &kp LC(LS(Z)) &kp ENTER &kp TAB  &kp ESC   &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
+                &none   &skq LCTL     &kp LEFT  &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
+                &none   &skq LSHFT    &kp DEL   &kp DOWN &kp BSPC  &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &skq RSHFT   &none
                                 &trans &trans &trans                                                    &trans &trans &trans
                         >;
                 };
