@@ -51,9 +51,9 @@
                 susl_layer {
                         label = " susl ";
                         bindings = <
-                &none   &kp Q      &kp B &kp D &kp C &kp W           &kp K   &kp U     &kp O    &kp Y     &kp J        &none
-                &none   &kp R      &kp N &kp T &kp S &kp F           &kp DOT &kp A     &kp E    &kp I     &kp H        &none
-                &none   &skq LSHFT &kp P &kp M &kp G &kp V           &kp X   &kp COMMA &kp FSLH &kp MINUS &skq RSHFT   &none
+                &none   &kp J      &kp B &kp D &kp C &kp W           &kp X    &kp U     &kp O    &kp Y     &kp K        &none
+                &none   &kp R      &kp N &kp T &kp S &kp F           &kp DOT  &kp A     &kp E    &kp I     &kp H        &none
+                &none   &skq LSHFT &kp P &kp M &kp G &kp V           &kp SEMI &kp COMMA &kp FSLH &kp MINUS &skq RSHFT   &none
                                 &none &trans &kp L                             &trans &trans &none
                         >;
                 };
