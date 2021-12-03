@@ -52,7 +52,7 @@
                         label = " susl ";
                         bindings = <
                 &none   &kp X      &kp B &kp D &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
-                &none   &kp R      &kp N &kp T &kp S &kp C           &kp FSLH  &kp E     &kp A   &kp I    &kp H        &none
+                &none   &kp R      &kp N &kp T &kp S &kp C           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
                 &none   &skq LSHFT &kp P &kp M &kp G &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
                                 &none &trans &kp L                             &trans &trans &none
                         >;
