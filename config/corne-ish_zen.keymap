@@ -61,9 +61,9 @@
                 sush_layer {
                         label = " sush ";
                         bindings = <
-                &none   &kp X &kp C &kp L &kp G &kp V           &kp Z   &kp U     &kp O    &kp Y &kp Q        &none
-                &none   &kp R &kp S &kp N &kp T &kp P           &kp DOT &kp A     &kp E    &kp I &kp H        &none
-                &none   &kp W &kp F &kp M &kp D &kp B           &kp K   &kp COMMA &kp FSLH &kp J &kp MINUS    &none
+                &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O     &kp Y   &kp K        &none
+                &none   &kp R      &kp S &kp T &kp N &kp F           &kp FSLH  &kp E     &kp A     &kp I   &kp H        &none
+                &none   &skq LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp MINUS &kp COMMA &kp DOT &skq RSHFT   &none
                                 &none &trans &skq LSHFT                   &trans &trans &none
                         >;
                 };
