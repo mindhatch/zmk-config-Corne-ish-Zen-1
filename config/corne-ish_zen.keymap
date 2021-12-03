@@ -46,16 +46,16 @@
                 &none   &kp X &kp C &kp D &kp K &kp Q           &kp J &kp P &kp O     &kp U   &kp SEMI    &none
                 &none   &kp R &kp S &kp T &kp L &kp M           &kp Y &kp N &kp A     &kp I   &kp E       &none
                 &none   &kp W &kp G &kp B &kp H &kp V           &kp Z &kp F &kp COMMA &kp DOT &kp FSLH    &none
-                                &none &sl  navi  &sk LSHFT             &kp SPACE &kp SQT &none
+                                &none &sl  navi  &skq LSHFT             &kp SPACE &kp SQT &none
                         >;
                 };
 
                 susl_layer {
                         label = " susl ";
                         bindings = <
-                &none   &kp X      &kp P &kp M &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
-                &none   &kp R      &kp N &kp T &kp S &kp G           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &sk LSHFT &kp B &kp D &kp C &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &sk RSHFT   &none
+                &none   &kp X     &kp P &kp D &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
+                &none   &kp R     &kp N &kp T &kp S &kp G           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
+                &none   &skq LSHFT &kp B &kp M &kp C &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
                                 &none &trans &kp L                               &trans &trans &none
                         >;
                 };
@@ -63,9 +63,9 @@
                 navi_layer {
                         label = " navi ";
                         bindings = <
-                &none   &kp LC(LS(Z))      &kp Z    &kp Q    &kp J     &kp LC(Z)     &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
-                &none   &skq LCTL  &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
-                &none   &sk LSHFT &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
+                &none   &kp LC(LS(Z)) &kp Z    &kp Q    &kp J     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
+                &none   &skq LCTL     &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
+                &none   &skq LSHFT     &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &skq RSHFT   &none
                                 &none &trans &trans                                             &trans &kp N0 &none
                         >;
                 };
@@ -73,9 +73,9 @@
                 sush_layer {
                         label = " sush ";
                         bindings = <
-                &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
-                &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &sk LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &sk RSHFT   &none
+                &none   &kp X     &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
+                &none   &kp R     &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
+                &none   &skq LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
                                 &none &sl  navi2  &kp L                          &trans &trans &none
                         >;
                 };
@@ -83,9 +83,9 @@
                 navi2_layer {
                         label = " navi2 ";
                         bindings = <
-                &none   &kp LC(LS(Z))      &kp J    &kp Q    &kp Z     &kp LC(Z)     &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
-                &none   &skq LCTL  &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
-                &none   &sk LSHFT &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
+                &none   &kp LC(LS(Z)) &kp J    &kp Q    &kp Z     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp GRAVE    &none
+                &none   &skq LCTL     &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
+                &none   &skq LSHFT     &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp BSLH  &kp N1 &kp N2 &kp N3 &skq RSHFT   &none
                                 &none &trans &trans                                             &trans &kp N0 &none
                         >;
                 };
