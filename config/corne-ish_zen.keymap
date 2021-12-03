@@ -64,7 +64,7 @@
                 &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O     &kp Y   &kp K        &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp FSLH  &kp E     &kp A     &kp I   &kp H        &none
                 &none   &skq LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp MINUS &kp COMMA &kp DOT &skq RSHFT   &none
-                                &none &trans &skq LSHFT                   &trans &trans &none
+                                &none &trans &trans                              &trans &trans &none
                         >;
                 };
 
