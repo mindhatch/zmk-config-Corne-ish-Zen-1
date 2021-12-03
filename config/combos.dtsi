@@ -9,7 +9,7 @@ compatible = "zmk,combos";
   };
 
 COMBO(q, &kp Q, 3 4, susl sush, 20)
-COMBO(j, &kp J, 2 3, sush, 20)
+COMBO(j, &kp J, 2 3, susl sush, 20)
 COMBO(z, &kp Z, 2 4, susl sush, 20)
 COMBO(lpar, &kp LPAR, 4 16, meow susl sush navi, 20)
 COMBO(rpar, &kp RPAR, 7 19, meow susl sush navi, 20)
