@@ -11,8 +11,8 @@
 
 #define  meow  0
 #define  susl  1
-#define  sush  2
-#define  navi  3
+#define  navi  2
+#define  sush  3
 #define  navi2 4
 
 &sk {
