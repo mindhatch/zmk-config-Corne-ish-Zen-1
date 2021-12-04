@@ -33,7 +33,7 @@
                 compatible = "zmk,keymap";      
 
                 rstn_layer {
-                        label = "  <3  ";
+                        label = " rstn ";
                         bindings = <
                 &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
@@ -43,7 +43,7 @@
                 };
 
                 navi_layer {
-                        label = "  ??  ";
+                        label = " navi ";
                         bindings = <
                 &none   &kp LC(LS(Z)) &kp LEFT &kp Q    &kp RIGHT &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
                 &none   &skq LCTL     &kp J    &kp UP   &kp Z     &kp HOME          &skq LALT &kp N1 &kp N2 &kp N3 &skq LGUI    &none
