@@ -10,9 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  meow  0
-#define  susl  1
+#define  lspc  1
 #define  navi  2
-#define  sush  3
+#define  rspc  3
 #define  navi2 4
 
 &sk {
@@ -50,13 +50,13 @@
                         >;
                 };
 
-                susl_layer {
-                        label = " susl ";
+                lspc_layer {
+                        label = " lspc ";
                         bindings = <
-                &none   &kp X      &kp P &kp D &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
-                &none   &kp R      &kp N &kp T &kp S &kp G           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &skq LSHFT &kp B &kp M &kp C &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
-                                &none &trans &kp L                               &trans &trans &none
+                &none   &kp X      &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
+                &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
+                &none   &skq LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
+                                &none &sl  navi2  &kp SPACE                      &kp L &trans &none
                         >;
                 };
 
@@ -70,13 +70,13 @@
                         >;
                 };
 
-                sush_layer {
-                        label = " sush ";
+                rspc_layer {
+                        label = " rspc ";
                         bindings = <
                 &none   &kp X      &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K     &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
                 &none   &skq LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
-                                &none &sl  navi2  &kp L                          &trans &trans &none
+                                &none &sl  navi2  &kp L                          &kp SPACE &trans &none
                         >;
                 };
 
