@@ -35,9 +35,9 @@
                 rstn_layer {
                         label = " rstn ";
                         bindings = <
-                &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
+                &none   &kp X      &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &skq LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
+                &none   &skq LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
                                 &none &sl  navi  &kp L                               &kp SPACE &kp SQT &none
                         >;
                 };
@@ -48,7 +48,7 @@
                 &none   &kp LC(LS(Z)) &kp LEFT &kp Q    &kp RIGHT &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
                 &none   &skq LCTL     &kp J    &kp UP   &kp Z     &kp HOME          &skq LALT &kp N1 &kp N2 &kp N3 &skq LGUI    &none
                 &none   &skq LSHFT    &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N4 &kp N5 &kp N6 &skq RSHFT   &none
-                                &none &trans &trans                                             &trans &kp 0 &none
+                                &none &trans &trans                                             &trans &kp N0 &none
                         >;
                 };
         };
