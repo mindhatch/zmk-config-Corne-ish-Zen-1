@@ -9,10 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define  rstn  0
-#define  navi  1
-#define  rnts  2
-#define  navi2 3
+#define  rsth  0
+#define  rstn  1
+#define  navi  2
+#define  rnts  3
+#define  navi2 4
 
 / {
 
@@ -34,13 +35,23 @@
         keymap {
                 compatible = "zmk,keymap";      
 
+                rsth_layer {
+                        label = " rsth ";
+                        bindings = <
+                &none   &kp X      &kp C &kp M &kp K &kp Q           &kp J &kp F &kp O   &kp U     &kp SEMI        &none
+                &none   &kp R      &kp S &kp T &kp H &kp V           &kp Y &kp N &kp A   &kp I     &kp L        &none
+                &none   &skq LSHFT &kp W &kp G &kp D &kp B           &kp Z &kp P &kp DOT &kp COMMA &skq RSHFT   &none
+                                &none &sl  navi  &kp SPACE                   &kp E &kp SQT &none
+                        >;
+                };
+
                 rstn_layer {
                         label = " rstn ";
                         bindings = <
                 &none   &kp X      &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
                 &none   &skq LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
-                                &none &sl  navi  &kp L                           &kp SPACE &kp SQT &none
+                                &none &trans &kp L                               &kp SPACE &kp SQT &none
                         >;
                 };
 
