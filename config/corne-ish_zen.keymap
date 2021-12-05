@@ -11,6 +11,8 @@
 
 #define  rstn  0
 #define  navi  1
+#define  rnts  2
+#define  navi2 3
 
 / {
 
@@ -28,7 +30,7 @@
                 quick-release;
         };
   }; 
-  
+
         keymap {
                 compatible = "zmk,keymap";      
 
@@ -38,17 +40,37 @@
                 &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
                 &none   &skq LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
-                                &none &sl  navi  &kp L                               &kp SPACE &kp SQT &none
+                                &none &sl  navi  &kp L                           &kp SPACE &kp SQT &none
                         >;
                 };
 
                 navi_layer {
                         label = " navi ";
                         bindings = <
-                &none   &kp LC(LS(Z)) &kp LEFT &kp Q    &kp RIGHT &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
-                &none   &skq LCTL     &kp J    &kp UP   &kp Z     &kp HOME          &skq LALT &kp N1 &kp N2 &kp N3 &skq LGUI    &none
+                &none   &kp LC(LS(Z)) &kp J    &kp Q    &kp Z     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
+                &none   &skq LCTL     &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N1 &kp N2 &kp N3 &skq LGUI    &none
                 &none   &skq LSHFT    &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N4 &kp N5 &kp N6 &skq RSHFT   &none
-                                &none &trans &trans                                             &trans &kp N0 &none
+                                &none &trans &kp L                                              &kp SPACE &kp N0 &none
+                        >;
+                };
+
+                rnts_layer {
+                        label = " rnts ";
+                        bindings = <
+                &none   &kp X      &kp P &kp D &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
+                &none   &kp R      &kp N &kp T &kp S &kp G           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
+                &none   &skq LSHFT &kp B &kp M &kp C &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
+                                &none &sl  navi2 &kp L                           &kp SPACE &kp SQT &none
+                        >;
+                };
+
+                navi2_layer {
+                        label = " navi2 ";
+                        bindings = <
+                &none   &kp LC(LS(Z)) &kp Z    &kp Q    &kp J     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
+                &none   &skq LCTL     &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N1 &kp N2 &kp N3 &skq LGUI    &none
+                &none   &skq LSHFT    &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N4 &kp N5 &kp N6 &skq RSHFT   &none
+                                &none &trans &kp L                                              &kp SPACE &kp N0 &none
                         >;
                 };
         };
