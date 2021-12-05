@@ -58,8 +58,8 @@
                         label = " rnts ";
                         bindings = <
                 &none   &kp X      &kp P &kp D &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
-                &none   &kp R      &kp N &kp T &kp S &kp G           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &skq LSHFT &kp B &kp M &kp C &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
+                &none   &kp R      &kp N &kp T &kp S &kp C           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
+                &none   &skq LSHFT &kp B &kp M &kp G &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
                                 &none &sl  navi2 &kp L                           &kp SPACE &kp SQT &none
                         >;
                 };
