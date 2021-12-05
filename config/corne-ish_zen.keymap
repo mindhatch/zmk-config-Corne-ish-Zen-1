@@ -37,9 +37,9 @@
                 rstn_layer {
                         label = " rstn ";
                         bindings = <
-                &none   &kp X      &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
+                &none   &kp X      &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
                 &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &skq LSHFT &kp G &kp M &kp P &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
+                &none   &skq LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
                                 &none &sl  navi  &kp L                           &kp SPACE &kp SQT &none
                         >;
                 };
