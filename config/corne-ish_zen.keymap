@@ -17,6 +17,10 @@
   quick-release;
 };
 
+&mt {
+  flavor = "tap-preferred";
+};
+
 / {
         combos {
                 #include "combos.dtsi"
@@ -28,9 +32,9 @@
                 miaou_layer {
                         label = " miaou";
                         bindings = <
-                &none   &kp X     &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
-                &none   &kp R     &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &sk LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &sk RSHFT   &none
+                &none   &kp X       &kp C &kp D &kp W &kp V           &kp SEMI  &kp COMMA &kp DOT &kp FSLH &kp Q          &none
+                &none   &kp R       &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H          &none
+                &none   &mt LSHFT J &kp G &kp M &kp P &kp B           &kp GRAVE &kp U     &kp O   &kp Y    &mt RSHFT K    &none
                                 &none &trans &kp L                               &kp SPACE &kp SQT &none
                         >;
                 };
@@ -39,8 +43,8 @@
                         label = " navi ";
                         bindings = <
                 &none   &kp LC(LS(Z)) &kp J    &kp Q    &kp Z     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
-                &none   &sk LCTL      &kp LEFT &kp UP   &kp RIGHT &kp HOME          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI    &none
-                &none   &sk LSHFT     &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
+                &none   &sk LCTL      &kp LEFT &kp UP   &kp RIGHT &kp HOME          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI     &none
+                &none   &sk LSHFT     &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N1 &kp N2 &kp N3 &sk RSHFT    &none
                                 &none &trans &kp L                                              &kp SPACE &kp N0 &none
                         >;
                 };
