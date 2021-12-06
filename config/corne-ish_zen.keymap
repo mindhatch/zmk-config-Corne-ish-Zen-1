@@ -9,48 +9,28 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define  rsth  0
-#define  rstn  1
-#define  navi  2
-#define  rnts  3
-#define  navi2 4
+#define  miaou 0
+#define  navi  1
+
+&sk {
+  release-after-ms = <1000>;
+  quick-release;
+};
 
 / {
-
         combos {
                 #include "combos.dtsi"
         };
 
-        behaviors {
-                skq: sticky_key_quick_release {
-                compatible = "zmk,behavior-sticky-key";
-                label = "STICKY_KEY_QUICK_RELEASE";
-                #binding-cells = <1>;
-                bindings = <&kp>;
-                release-after-ms = <1000>;
-                quick-release;
-        };
-  }; 
-
         keymap {
                 compatible = "zmk,keymap";      
 
-                rsth_layer {
-                        label = " rsth ";
+                miaou_layer {
+                        label = " miaou";
                         bindings = <
-                &none   &kp X      &kp C &kp M &kp K &kp Q           &kp J &kp F &kp O   &kp U     &kp SEMI        &none
-                &none   &kp R      &kp S &kp T &kp H &kp V           &kp Y &kp N &kp A   &kp I     &kp L        &none
-                &none   &skq LSHFT &kp W &kp G &kp D &kp B           &kp Z &kp P &kp DOT &kp COMMA &skq RSHFT   &none
-                                &none &sl  navi  &kp SPACE                   &kp E &kp SQT &none
-                        >;
-                };
-
-                rstn_layer {
-                        label = " rstn ";
-                        bindings = <
-                &none   &kp X      &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
-                &none   &kp R      &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &skq LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
+                &none   &kp X     &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
+                &none   &kp R     &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
+                &none   &sk LSHFT &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &sk RSHFT   &none
                                 &none &trans &kp L                               &kp SPACE &kp SQT &none
                         >;
                 };
@@ -59,28 +39,8 @@
                         label = " navi ";
                         bindings = <
                 &none   &kp LC(LS(Z)) &kp J    &kp Q    &kp Z     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
-                &none   &skq LCTL     &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
-                &none   &skq LSHFT    &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N1 &kp N2 &kp N3 &skq RSHFT   &none
-                                &none &trans &kp L                                              &kp SPACE &kp N0 &none
-                        >;
-                };
-
-                rnts_layer {
-                        label = " rnts ";
-                        bindings = <
-                &none   &kp X      &kp P &kp D &kp W &kp F           &kp SEMI  &kp U     &kp O   &kp Y    &kp K        &none
-                &none   &kp R      &kp N &kp T &kp S &kp G           &kp MINUS &kp E     &kp A   &kp I    &kp H        &none
-                &none   &skq LSHFT &kp B &kp M &kp C &kp V           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &skq RSHFT   &none
-                                &none &sl  navi2 &kp L                           &kp SPACE &kp SQT &none
-                        >;
-                };
-
-                navi2_layer {
-                        label = " navi2 ";
-                        bindings = <
-                &none   &kp LC(LS(Z)) &kp Z    &kp Q    &kp J     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH     &none
-                &none   &skq LCTL     &kp LEFT &kp UP   &kp RIGHT &kp HOME          &skq LALT &kp N4 &kp N5 &kp N6 &skq LGUI    &none
-                &none   &skq LSHFT    &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N1 &kp N2 &kp N3 &skq RSHFT   &none
+                &none   &sk LCTL      &kp LEFT &kp UP   &kp RIGHT &kp HOME          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI    &none
+                &none   &sk LSHFT     &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
                                 &none &trans &kp L                                              &kp SPACE &kp N0 &none
                         >;
                 };
