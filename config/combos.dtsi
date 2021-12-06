@@ -8,9 +8,9 @@ compatible = "zmk,combos";
     timeout-ms = <MS>; \
   };
 
-COMBO(j, &kp j, 2 3, miaou, 20)
-COMBO(q, &kp q, 9 10, miaou, 20)
-COMBO(z, &kp z, 3 4, miaou, 20)
+COMBO(j, &kp J, 2 3, miaou, 20)
+COMBO(q, &kp Q, 9 10, miaou, 20)
+COMBO(z, &kp Z, 3 4, miaou, 20)
 COMBO(lpar, &kp LPAR, 4 16, miaou navi, 20)
 COMBO(rpar, &kp RPAR, 7 19, miaou navi, 20)
 COMBO(lbrc, &kp LBRC, 3 15, miaou navi, 20)
