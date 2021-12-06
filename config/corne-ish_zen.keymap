@@ -62,9 +62,9 @@
                 miaou_layer {
                         label = " miaou";
                         bindings = <
-                &none   &kp X &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O     &kp Y   &kp Q     &none
+                &none   &kp X &kp C &kp D &kp W &kp B           &kp SEMI  &kp U     &kp O     &kp Y   &kp Q     &none
                 &none   &kp R &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A     &kp I   &kp H     &none
-                &none   &kp J &kp G &kp M &kp P &kp B           &kp GRAVE &kp FSLH  &kp COMMA &kp DOT &kp K     &none
+                &none   &kp J &kp G &kp M &kp P &kp V           &kp GRAVE &kp FSLH  &kp COMMA &kp DOT &kp K     &none
                                 &none &sq LSHFT SL(L)                       &kp SPACE &kp SQT &none
                         >;
                 };
@@ -72,7 +72,7 @@
                 navi_layer {
                         label = " navi ";
                         bindings = <
-                &none   &kp LC(LS(Z)) &kp J    &kp Q    &kp Z     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH    &none
+                &none   &kp LC(LS(Z)) &kp Z    &kp TAB  &kp Z     &kp LC(Z)         &kp SEMI  &kp N7 &kp N8 &kp N9 &kp BSLH    &none
                 &none   &sk LCTL      &kp LEFT &kp UP   &kp RIGHT &kp HOME          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI    &none
                 &none   &sk LSHFT     &kp DEL  &kp DOWN &kp BSPC  &kp END           &kp GRAVE &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
                                 &none &trans &trans                                             &trans &kp N0 &none
