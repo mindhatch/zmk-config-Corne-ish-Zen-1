@@ -11,7 +11,8 @@
 
 #define  miaou 0
 #define miaou1 1
-#define  navi  2
+#define  aptex 2
+#define  navi  3
 
 &sl {
     release-after-ms = <1000>;
@@ -92,6 +93,16 @@
                 &none   &kp R &kp S &kp T &kp N &kp F           &kp K     &kp A   &kp E   &kp I     &kp H        &none
                 &none   &kp X &kp G &kp M &kp P &kp B           &kp SEMI  &kp DOT &kp SQT &kp COMMA &kp FSLH     &none
                                 &none SL(LSHFT) &kp L                       &kp SPACE SQ(SQT) &none
+                        >;
+                };
+
+                aptex_layer {
+                        label = " aptex";
+                        bindings = <
+                &none   &kp FSLH &kp W &kp G &kp D &kp B           &kp J &kp F &kp O   &kp U     &kp SEMI       &none
+                &none   &kp R    &kp S &kp T &kp H &kp V           &kp Y &kp N &kp A   &kp I     &kp L          &none
+                &none   &kp X    &kp C &kp M &kp K &kp Q           &kp Z &kp P &kp SQT &kp COMMA &kp DOT        &none
+                                &none &sl  navi  &kp SPACE                  &kp E SL(LSHFT) &none
                         >;
                 };
 

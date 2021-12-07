@@ -8,8 +8,9 @@ compatible = "zmk,combos";
     timeout-ms = <MS>; \
   };
 
-COMBO(miaou, &tog miaou, 1 5, miaou miaou1, 20)
-COMBO(miaou1, &tog miaou1, 3 5, miaou miaou1, 20)
+COMBO(miaou, &tog miaou, 1 5, miaou miaou1 aptex, 20)
+COMBO(miaou1, &tog miaou1, 3 5, miaou miaou1 aptex, 20)
+COMBO(aptex, &tog aptex, 1 3, miaou miaou1 aptex, 20)
 COMBO(capsword, &caps_word, 3 4, miaou miaou1, 20)
 COMBO(caps, &kp CAPS, 4 5, miaou miaou1, 20)
 COMBO(z, &kp Z, 2 3, miaou miaou1, 20)
