@@ -11,7 +11,7 @@
 
 #define  miaou 0
 #define miaou1 1
-#define  aptex 2
+#define  rsthf 2
 #define  navi  3
 
 &sl {
@@ -95,13 +95,13 @@
                                 &none SL(LSHFT) &kp L                       &kp SPACE SQ(SQT) &none
                         >;
                 };
-
-                aptex_layer {
-                        label = " aptex";
+                
+                rsthf_layer {
+                        label = " rsthf";
                         bindings = <
-                &none   &kp FSLH &kp W &kp G &kp D &kp B           &kp J &kp F &kp O   &kp U     &kp SEMI       &none
-                &none   &kp R    &kp S &kp T &kp H &kp V           &kp Y &kp N &kp A   &kp I     &kp L          &none
-                &none   &kp X    &kp C &kp M &kp K &kp Q           &kp Z &kp P &kp SQT &kp COMMA &kp DOT        &none
+                &none   &kp X     &kp C &kp Y &kp P &kp B           &kp J &kp L &kp U   &kp SQT   &kp Q         &none
+                &none   &kp R     &kp S &kp T &kp H &kp F           &kp V &kp N &kp A   &kp O     &kp I         &none
+                &none   &sq LSHFT &kp W &kp G &kp D &kp K           &kp Z &kp M &kp DOT &kp COMMA &sq RSHFT     &none
                                 &none &sl  navi  &kp SPACE                  &kp E SL(LSHFT) &none
                         >;
                 };
