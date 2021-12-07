@@ -36,5 +36,5 @@ COMBO(playpause, &kp LC(LA(LS(P))), 2 3 4, navi, 20)
 COMBO(volup, &kp K_VOL_UP, 3 4, navi, 20)
 COMBO(voldn, &kp K_VOL_DN, 2 3, navi, 20)
 COMBO(next, &kp K_NEXT, 2 4, navi, 20)
-COMBO(prev, &kp K_PREV, 1 4, navi, 20
+COMBO(prev, &kp K_PREV, 1 4, navi, 20)
 COMBO(slash, &kp FSLH, 32 33, rsthf, 20)
