@@ -10,9 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  miaou 0
-#define miaou1 1
-#define  rsthf 2
-#define  navi  3
+#define  navi  1
 
 &sl {
     release-after-ms = <1000>;
@@ -39,17 +37,17 @@
             release-after-ms = <1000>;
             quick-release;
         };
-        nl: not_so_sticky_layer {
+        nl: not_so_sticky_layer_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "not so sticky layer";
+            label = "not so sticky layer shift";
             #binding-cells = <2>;
             tapping_term_ms = <169>;
             flavor = "tap-preferred";
             bindings = <&sl>, <&sq>;
         };
-        nq: not_so_sticky_quote {
+        nq: not_so_sticky_layer_key {
             compatible = "zmk,behavior-hold-tap";
-            label = "not so sticky quote";
+            label = "not so sticky layer key";
             #binding-cells = <2>;
             tapping_term_ms = <169>;
             flavor = "tap-preferred";
@@ -68,7 +66,6 @@
 
 #define SL(KEY) &nl  navi  KEY
 #define SQ(KEY) &nq  navi  KEY
-#define SK(KEY) &nk LSHFT KEY
 #define AK(KEY) &nk LALT KEY
 #define GK(KEY) &nk LGUI KEY
 
@@ -79,33 +76,13 @@
                 miaou_layer {
                         label = " miaou";
                         bindings = <
-                &none   &kp J &kp C &kp D &kp W &kp V           &kp SEMI  &kp U     &kp O   &kp Y    &kp Q     &none
-                &none   &kp R &kp S &kp T &kp N &kp F           &kp MINUS &kp E     &kp A   &kp I    &kp H     &none
-                &none   &kp X &kp G &kp M &kp P &kp B           &kp GRAVE &kp COMMA &kp DOT &kp FSLH &kp K     &none
-                                &none &sq LSHFT SL(L)                       &kp SPACE &kp SQT &none
-                        >;
-                };
-
-                miaou1_layer {
-                        label = "miaou1";
-                        bindings = <
-                &none   &kp J &kp G &kp D &kp W &kp B           &kp MINUS &kp U     &kp O   &kp Y    &kp Q        &none
-                &none   &kp R &kp S &kp T &kp N &kp P           &kp DOT   &kp A     &kp E   &kp I    &kp H        &none
-                &none   &kp X &kp C &kp M &kp F &kp V           &kp SEMI  &kp COMMA &kp SQT &kp FSLH &kp K     &none
+                &none   &kp J &kp G &kp D &kp W &kp V           &kp MINUS &kp U     &kp O   &kp Y    &kp Q        &none
+                &none   &kp R &kp S &kp T &kp N &kp F           &kp DOT   &kp A     &kp E   &kp I    &kp H        &none
+                &none   &kp X &kp C &kp M &kp P &kp B           &kp SEMI  &kp COMMA &kp SQT &kp FSLH &kp K     &none
                                 &none SL(LSHFT) &kp L                       &kp SPACE SQ(SQT) &none
                         >;
                 };
                 
-                rsthf_layer {
-                        label = " rsthf";
-                        bindings = <
-                &none   &kp X     &kp C &kp Y &kp P &kp B           &kp J &kp L &kp U   &kp SQT   &kp Q         &none
-                &none   &kp R     &kp S &kp T &kp H &kp F           &kp V &kp N &kp A   &kp O     &kp I         &none
-                &none   &sq LSHFT &kp W &kp G &kp D &kp K           &kp Z &kp M &kp DOT &kp COMMA &sq RSHFT     &none
-                                &none &sl  navi  &kp SPACE                  &kp E SL(LSHFT) &none
-                        >;
-                };
-
                 navi_layer {
                         label = " navi ";
                         bindings = <
