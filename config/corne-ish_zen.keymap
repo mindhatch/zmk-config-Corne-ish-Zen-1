@@ -76,9 +76,9 @@
                 miaou_layer {
                         label = " miaou";
                         bindings = <
-                &none   &kp J &kp C &kp D &kp W &kp V           &kp MINUS &kp U    &kp O   &kp Y     &kp Q        &none
-                &none   &kp R &kp S &kp T &kp N &kp F           &kp SQT   &kp E    &kp A   &kp I     &kp H        &none
-                &none   &kp X &kp G &kp M &kp P &kp B           &kp SEMI  &kp FSLH &kp DOT &kp COMMA &kp K     &none
+                &none   &kp J &kp G &kp D &kp N &kp V           &kp MINUS &kp U &kp O   &kp Y   &kp SEMI        &none
+                &none   &kp R &kp S &kp T &kp H &kp B           &kp COMMA &kp A &kp E   &kp I   &kp C           &none
+                &none   &kp X &kp F &kp M &kp P &kp Q           &kp FSLH  &kp K &kp SQT &kp DOT &kp W           &none
                                 &none SL(LSHFT) &kp L                       &kp SPACE SQ(SQT) &none
                         >;
                 };
@@ -86,9 +86,9 @@
                 navi_layer {
                         label = " navi ";
                         bindings = <
-                &none   &kp LC(X) &kp LC(C) &kp TAB  &kp LC(V) &kp LC(Z)         &kp GRAVE &kp N7 &kp N8 &kp N9 &kp BSLH    &none
+                &none   &kp LC(X) &kp LC(C) &kp TAB  &kp LC(V) &kp LC(Z)         &kp GRAVE &kp N7 &kp N8 &kp N9 &kp SEMI    &none
                 &none   &sk LCTL  &kp LEFT  &kp UP   &kp RIGHT AK(HOME)          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI    &none
-                &none   &sk LSHFT &kp DEL   &kp DOWN &kp BSPC  GK(END)           &kp SEMI  &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
+                &none   &sk LSHFT &kp DEL   &kp DOWN &kp BSPC  GK(END)           &kp BSLH  &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
                                 &none &trans &trans                                             &trans &kp N0 &none
                         >;
                 };
