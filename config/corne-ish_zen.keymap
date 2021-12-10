@@ -76,9 +76,9 @@
                 miaou_layer {
                         label = " miaou";
                         bindings = <
-                &none   &kp X &kp C &kp D &kp B &kp V           &kp MINUS &kp U    &kp O     &kp Y   &kp Q      &none
-                &none   &kp R &kp S &kp T &kp N &kp F           &kp SQT   &kp E    &kp A     &kp I   &kp H      &none
-                &none   &kp W &kp G &kp M &kp P &kp Z           &kp SEMI  &kp FSLH &kp COMMA &kp DOT &kp K      &none
+                &none   &kp J &kp C &kp D &kp W &kp V           &kp MINUS &kp U     &kp O   &kp Y    &kp Q      &none
+                &none   &kp R &kp S &kp T &kp N &kp F           &kp SQT   &kp E     &kp A   &kp I    &kp H      &none
+                &none   &kp X &kp G &kp M &kp P &kp B           &kp SEMI  &kp COMMA &kp DOT &kp FSLH &kp K      &none
                                 &none SL(LSHFT) &kp L                       &kp SPACE SQ(SQT) &none
                         >;
                 };
