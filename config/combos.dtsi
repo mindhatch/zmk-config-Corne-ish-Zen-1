@@ -11,6 +11,7 @@ compatible = "zmk,combos";
 COMBO(capsword, &caps_word, 3 4, miaou, 20)
 COMBO(caps, &kp CAPS, 4 5, miaou, 20)
 COMBO(z, &kp Z, 2 3, miaou, 20)
+COMBO(GRAVE, &kp GRAVE, 5 6, miaou, 20)
 COMBO(lpar, &kp LPAR, 4 16, miaou navi, 20)
 COMBO(rpar, &kp RPAR, 7 19, miaou navi, 20)
 COMBO(lbrc, &kp LBRC, 3 15, miaou navi, 20)
