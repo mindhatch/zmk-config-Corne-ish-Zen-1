@@ -8,6 +8,8 @@ compatible = "zmk,combos";
     timeout-ms = <MS>; \
   };
 
+COMBO(ls, &sq RSHFT, 14 15, miaou, 20)
+COMBO(rs, &sq RSHFT , 20 21, miaou, 20)
 COMBO(capsword, &caps_word, 3 4, miaou, 20)
 COMBO(caps, &kp CAPS, 4 5, miaou, 20)
 COMBO(z, &kp Z, 2 3, miaou, 20)
