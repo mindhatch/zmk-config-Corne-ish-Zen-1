@@ -10,7 +10,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  miaou 0
-#define  navi  1
+#define miaou2 1
+#define  navi  2
 
 &sl {
     quick-release;
@@ -70,14 +71,24 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap";      
-
+                compatible = "zmk,keymap";
+                
                 miaou_layer {
                         label = " miaou";
                         bindings = <
                 &none   &kp X &kp C &kp D &kp F &kp V           &kp SQT   &kp U     &kp O   &kp Y    &kp Q  &none
                 &none   &kp R &kp S &kp T &kp N &kp B           &kp MINUS &kp E     &kp A   &kp I    &kp H  &none
                 &none   &kp W &kp G &kp M &kp P &kp J           &kp SEMI  &kp COMMA &kp DOT &kp FSLH &kp K  &none
+                                &none SL(LSHFT) &kp L             &kp SPACE &kp SQT &none
+                        >;
+                };
+                
+                miaou2_layer {
+                        label = "miaou2";
+                        bindings = <
+                &none   &kp J &kp G &kp D &kp W &kp V           &kp MINUS &kp U &kp O   &kp Y    &kp Q  &none
+                &none   &kp R &kp S &kp T &kp N &kp F           &kp COMMA &kp A &kp E   &kp I    &kp H  &none
+                &none   &kp X &kp C &kp M &kp P &kp B           &kp SEMI  &kp K &kp SQT &kp DOT &kp FSLH  &none
                                 &none SL(LSHFT) &kp L             &kp SPACE &kp SQT &none
                         >;
                 };
