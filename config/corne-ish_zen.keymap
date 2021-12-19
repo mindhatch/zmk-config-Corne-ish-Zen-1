@@ -10,8 +10,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define  miaou 0
-#define miaou2 1
-#define  navi  2
+#define  navi  1
+#define miaou2 2
+#define miaou3 3
+#define number 4
+#define  navi1 5
 
 &sl {
     quick-release;
@@ -83,16 +86,6 @@
                         >;
                 };
                 
-                miaou2_layer {
-                        label = "miaou2";
-                        bindings = <
-                &none   &kp J &kp B &kp D &kp F &kp W           &kp MINUS &kp U &kp O    &kp Y   &kp Q    &none
-                &none   &kp R &kp N &kp T &kp S &kp G           &kp COMMA &kp A &kp E    &kp I   &kp H    &none
-                &none   &kp X &kp P &kp M &kp C &kp V           &kp SEMI  &kp K &kp FSLH &kp DOT &kp SQT  &none
-                                &none SL(LSHFT) &kp L             &kp SPACE &kp SQT &none
-                        >;
-                };
-                
                 navi_layer {
                         label = " navi ";
                         bindings = <
@@ -100,6 +93,46 @@
                 &none   &sk LCTL  &kp LEFT  &kp UP   &kp RIGHT AK(HOME)          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI    &none
                 &none   &sk LSHFT &kp DEL   &kp DOWN &kp BSPC  GK(END)           &kp BSLH  &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
                                 &none &trans &trans                                             &trans &kp N0 &none
+                        >;
+                };
+                
+                miaou2_layer {
+                        label = "miaou2";
+                        bindings = <
+                &none   &kp W &kp C &kp M &kp D &none           &none &kp L &kp U &kp O &kp Y    &none
+                &none   &kp R &kp S &kp T &kp H &none           &none &kp N &kp E &kp A &kp I    &none
+                &none   &none &none &none &none &none           &none &none &none &none &none  &none
+                                &none &sl navi1  &sl miaou3             &kp SPACE &sl number &none
+                        >;
+                };
+                
+                miaou3_layer {
+                        label = "miaou3";
+                        bindings = <
+                &none   &kp Q &kp V &kp K &kp B &none           &none &kp DOT   &kp SEMI  &kp SQT &kp QMARK   &none
+                &none   &kp X &kp F &kp G &kp P &none           &none &kp COMMA &kp COLON &kp DQT &kp FSLH    &none
+                &none   &none &none &none &none &none           &none &none &none &none &none  &none
+                                &none &trans &trans                    &trans &trans &none
+                        >;
+                };
+                
+                number_layer {
+                        label = "number";
+                        bindings = <
+                &none   &kp FSLH &kp MINUS &kp UNDER &kp N6 &none           &none &kp N5 &kp EQUAL &kp PLUS &kp STAR   &none
+                &none   &kp N7   &kp N8    &kp N9    &kp N0 &none           &none &kp N1 &kp N2    &kp N3   &kp N4     &none
+                &none   &none &none &none &none &none                       &none &none &none &none &none  &none
+                                &none &trans &kp SPACE                             &trans &trans &none
+                        >;
+                };
+                
+                navi1_layer {
+                        label = " navi1";
+                        bindings = <
+                &none   &sq LALT &sq LGUI &sq LSHFT &sq LCTL  &none           &none &kp HOME &kp PGUP  &kp PGDN &kp END     &none
+                &none   &kp LEFT &kp DOWN &kp UP    &kp RIGHT &none           &none &sq LCTL &sq LSHFT &sq LGUI &sq LALT    &none
+                &none   &none &none &none &none &none                         &none &none &none &none &none  &none
+                                &none &trans &trans                                  &trans &trans &none
                         >;
                 };
         };
