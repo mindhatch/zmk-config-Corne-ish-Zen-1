@@ -100,8 +100,8 @@
                         label = "miaou2";
                         bindings = <
                 &none   &none &none &none &none &none           &none &none &none &none &none  &none
-                &none   &kp W &kp C &kp M &kp D &none           &none &kp L &kp U &kp O &kp Y    &none
                 &none   &kp R &kp S &kp T &kp H &none           &none &kp N &kp E &kp A &kp I    &none
+                &none   &kp W &kp C &kp M &kp D &none           &none &kp L &kp U &kp O &kp Y    &none
                                 &none &sl navi1  &sl miaou3             &kp SPACE &sl number &none
                         >;
                 };
@@ -110,8 +110,8 @@
                         label = "miaou3";
                         bindings = <
                 &none   &none &none &none &none &none           &none &none &none &none &none  &none
-                &none   &kp Q &kp V &kp K &kp B &none           &none &kp DOT   &kp SEMI  &kp SQT &kp QMARK   &none
                 &none   &kp X &kp F &kp G &kp P &none           &none &kp COMMA &kp COLON &kp DQT &kp FSLH    &none
+                &none   &kp Q &kp V &kp K &kp B &none           &none &kp DOT   &kp SEMI  &kp SQT &kp QMARK   &none
                                 &none &trans &trans                    &trans &trans &none
                         >;
                 };
@@ -120,8 +120,8 @@
                         label = "number";
                         bindings = <
                 &none   &none &none &none &none &none                       &none &none &none &none &none  &none
-                &none   &kp FSLH &kp MINUS &kp UNDER &kp N6 &none           &none &kp N5 &kp EQUAL &kp PLUS &kp STAR   &none
                 &none   &kp N7   &kp N8    &kp N9    &kp N0 &none           &none &kp N1 &kp N2    &kp N3   &kp N4     &none
+                &none   &kp FSLH &kp MINUS &kp UNDER &kp N6 &none           &none &kp N5 &kp EQUAL &kp PLUS &kp STAR   &none
                                 &none &trans &kp SPACE                             &trans &trans &none
                         >;
                 };
@@ -130,8 +130,8 @@
                         label = " navi1";
                         bindings = <
                 &none   &none &none &none &none &none                         &none &none &none &none &none  &none
-                &none   &sq LALT &sq LGUI &sq LSHFT &sq LCTL  &none           &none &kp HOME &kp PGUP  &kp PGDN &kp END     &none
                 &none   &kp LEFT &kp DOWN &kp UP    &kp RIGHT &none           &none &sq LCTL &sq LSHFT &sq LGUI &sq LALT    &none
+                &none   &sq LALT &sq LGUI &sq LSHFT &sq LCTL  &none           &none &kp HOME &kp PGUP  &kp PGDN &kp END     &none
                                 &none &trans &trans                                  &trans &trans &none
                         >;
                 };
