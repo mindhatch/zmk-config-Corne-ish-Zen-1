@@ -110,8 +110,8 @@
                         label = "miaou3";
                         bindings = <
                 &none   &none &none &none &none &none           &none &none &none &none &none  &none
-                &none   &kp X &kp F &kp G &kp P &none           &none &kp COMMA &kp COLON &kp DQT &kp FSLH    &none
-                &none   &kp Q &kp V &kp K &kp B &none           &none &kp DOT   &kp SEMI  &kp SQT &kp QMARK   &none
+                &none   &kp X &kp F &kp G &kp P &none           &none &kp COMMA &kp COLON &kp SQT &kp QMARK    &none
+                &none   &kp Q &kp V &kp K &kp B &none           &none &kp DOT   &kp SEMI  &kp DQT &kp FSLH     &none
                                 &none &trans &trans                    &trans &trans &none
                         >;
                 };
