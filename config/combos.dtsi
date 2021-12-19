@@ -10,7 +10,7 @@ compatible = "zmk,combos";
 
 COMBO(miaou2, &tog miaou2, 25 27 28, miaou miaou2, 20)
 COMBO(ls, &sq LSHFT, 14 15, miaou miaou2 miaou3 number, 20)
-COMBO(rs, &sq RSHFT , 20 21, miaou miaou2 miaou3 number, 20)
+COMBO(rs, &sq RSHFT , 33 34, miaou miaou2 miaou3 number, 20)
 COMBO(ent, &kp ENTER, 14 15 16, miaou2 miaou3 number navi1, 20)
 COMBO(tab, &kp TAB, 13 14 15, miaou2 miaou3 number navi1, 20)
 COMBO(esc, &kp ESC, 13 16, miaou2 miaou3 number navi1, 20)
