@@ -8,7 +8,7 @@ compatible = "zmk,combos";
     timeout-ms = <MS>; \
   };
   
-COMBO(miaou2, &tog miaou2, 13 14 15 16, miaou miaou2, 20)
+COMBO(miaou2, &tog miaou2, 13 15 16, miaou miaou2, 20)
 COMBO(ls, &sq LSHFT, 26 27, miaou miaou2 miaou3 number, 20)
 COMBO(rs, &sq RSHFT , 32 33, miaou miaou2 miaou3 number, 20)
 COMBO(ent, &kp ENTER, 26 27 28, miaou2 miaou3 number navi1, 20)
