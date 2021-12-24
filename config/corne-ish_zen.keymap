@@ -63,8 +63,8 @@
         keymap {
                 compatible = "zmk,keymap";
                               
-                miaou2_layer {
-                        label = "miaou2";
+                miaou1_layer {
+                        label = "miaou1";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   &kp W &kp C &kp M &kp D &none                   &none &kp L &kp U &kp O &kp Y                   &none
@@ -73,8 +73,8 @@
                         >;
                 };
                 
-                miaou3_layer {
-                        label = "miaou3";
+                miaou2_layer {
+                        label = "miaou2";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   &kp X &kp V &kp K &kp B &none                   &none &kp DOT   &kp SEMI  &kp SQT &kp FSLH      &none
@@ -83,8 +83,8 @@
                         >;
                 };
                 
-                number_layer {
-                        label = "number";
+                nmbr_layer {
+                        label = " nmbr ";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   &kp FSLH &kp PLUS &kp N0 &kp EQUAL &none        &none &kp UNDER &kp N9 &kp MINUS &kp STAR       &none
@@ -93,8 +93,8 @@
                         >;
                 };
                 
-                navi1_layer {
-                        label = " navi1";
+                navi_layer {
+                        label = " navi ";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   SK(LALT) SK(LGUI) SK(LSHFT) SK(LCTL)  &none     &none &kp HOME &kp BSPC  &kp DEL  &kp END       &none
