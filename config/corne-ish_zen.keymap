@@ -9,19 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define  miaou 0
-#define  navi  1
-#define miaou2 2
-#define miaou3 3
-#define number 4
-#define  navi1 5
+#define miaou2 1
+#define miaou3 2
+#define number 3
+#define  navi1 4
 
-&sl {
-    quick-release;
-};
-&sk {
-    release-after-ms = <1000>;
-};
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
@@ -40,62 +32,13 @@
             release-after-ms = <1000>;
             quick-release;
         };
-        nl: not_so_sticky_layer_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "not so sticky layer shift";
-            #binding-cells = <2>;
-            tapping_term_ms = <169>;
-            flavor = "tap-preferred";
-            bindings = <&sl>, <&sq>;
-        };
-        nq: not_so_sticky_layer_key {
-            compatible = "zmk,behavior-hold-tap";
-            label = "not so sticky layer key";
-            #binding-cells = <2>;
-            tapping_term_ms = <169>;
-            flavor = "tap-preferred";
-            bindings = <&sl>, <&kp>;
-        };
-        nk: not_so_sticky_key {
-            compatible = "zmk,behavior-hold-tap";
-            label = "not so sticky key";
-            #binding-cells = <2>;
-            tapping_term_ms = <169>;
-            flavor = "tap-preferred";
-            bindings = <&sq>, <&kp>;
-        };
     };
 };
-
-#define SL(KEY) &nl  navi  KEY
-#define SQ(KEY) &nq  navi  KEY
-#define AK(KEY) &nk LALT KEY
-#define GK(KEY) &nk LGUI KEY
 
 / {
         keymap {
                 compatible = "zmk,keymap";
-                
-                miaou_layer {
-                        label = " miaou";
-                        bindings = <
-                &none   &kp X &kp C &kp D &kp F &kp V           &kp SQT   &kp U     &kp O   &kp Y    &kp Q  &none
-                &none   &kp R &kp S &kp T &kp N &kp B           &kp MINUS &kp E     &kp A   &kp I    &kp H  &none
-                &none   &kp W &kp G &kp M &kp P &kp J           &kp SEMI  &kp COMMA &kp DOT &kp FSLH &kp K  &none
-                                &none SL(LSHFT) &kp L             &kp SPACE &kp SQT &none
-                        >;
-                };
-                
-                navi_layer {
-                        label = " navi ";
-                        bindings = <
-                &none   &kp LC(X) &kp LC(C) &kp TAB  &kp LC(V) &kp LC(Z)         &kp GRAVE &kp N7 &kp N8 &kp N9 &kp SEMI    &none
-                &none   &sk LCTL  &kp LEFT  &kp UP   &kp RIGHT AK(HOME)          &sk LALT  &kp N4 &kp N5 &kp N6 &sk LGUI    &none
-                &none   &sk LSHFT &kp DEL   &kp DOWN &kp BSPC  GK(END)           &kp BSLH  &kp N1 &kp N2 &kp N3 &sk RSHFT   &none
-                                &none &trans &trans                                             &trans &kp N0 &none
-                        >;
-                };
-                
+                              
                 miaou2_layer {
                         label = "miaou2";
                         bindings = <

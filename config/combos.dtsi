@@ -8,9 +8,8 @@ compatible = "zmk,combos";
     timeout-ms = <MS>; \
   };
 
-COMBO(miaou2, &tog miaou2, 13 15 16, miaou miaou2, 17)
-COMBO(ls, &sq LSHFT, 26 27, miaou miaou2 miaou3 number, 17)
-COMBO(rs, &sq RSHFT , 32 33, miaou miaou2 miaou3 number, 17)
+COMBO(ls, &sq LSHFT, 26 27, miaou2 miaou3 number, 17)
+COMBO(rs, &sq RSHFT , 32 33, miaou2 miaou3 number, 17)
 COMBO(ent, &kp ENTER, 26 27 28, miaou2 miaou3 number navi1, 17)
 COMBO(tab, &kp TAB, 25 26 27, miaou2 miaou3 number navi1, 17)
 COMBO(esc, &kp ESC, 25 28, miaou2 miaou3 number navi1, 17)
@@ -37,6 +36,6 @@ COMBO(all, &kp LC(A), 25 26 27 28, navi1, 17)
 COMBO(copy, &kp LC(C), 25 26, navi1, 17)
 COMBO(paste, &kp LC(V), 27 28, navi1, 17)
 COMBO(cut, &kp LC(X), 26 28, navi1, 17)
-COMBO(capswordl, &caps_word, 13 16, miaou miaou2 miaou3, 17)
-COMBO(capswordr, &caps_word, 19 22, miaou miaou2 miaou3, 17)
-COMBO(caps, &kp CAPS, 13 14 15 16, miaou miaou2 miaou3, 17)
+COMBO(capswordl, &caps_word, 13 16, miaou2 miaou3, 17)
+COMBO(capswordr, &caps_word, 19 22, miaou2 miaou3, 17)
+COMBO(caps, &kp CAPS, 13 14 15 16, miaou2 miaou3, 17)
