@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include "ciz.h"
 
-#define miaou1 0
-#define miaou2 1
+#define miaou  0
+#define miaou1 1
 #define  nmbr  2
 #define  navi  3
 
@@ -63,18 +63,18 @@
         keymap {
                 compatible = "zmk,keymap";
                               
-                miaou1_layer {
-                        label = "miaou1";
+                miaou_layer {
+                        label = "miaou ";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   &kp W &kp C &kp M &kp D &none                   &none &kp L &kp U &kp O &kp Y                   &none
                 &none   &kp R &kp S &kp T &kp H &none                   &none &kp N &kp E &kp A &kp I                   &none
-                                &none MO( navi )  &sl miaou2                      &kp SPACE MO( nmbr ) &none
+                                &none MO( navi )  &sl miaou1                      &kp SPACE MO( nmbr ) &none
                         >;
                 };
                 
-                miaou2_layer {
-                        label = "miaou2";
+                miaou1_layer {
+                        label = "miaou1";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   &kp X &kp V &kp K &kp B &none                   &none &kp DOT   &kp SEMI  &kp SQT &kp FSLH      &none
