@@ -18,6 +18,10 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
+&sl {
+    /delete-property/ quick-release;
+}
+
 / {
    combos {
         #include "combos.dtsi"
