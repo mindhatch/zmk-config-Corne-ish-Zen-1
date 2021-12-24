@@ -20,7 +20,7 @@
 
 &sl {
     /delete-property/ quick-release;
-}
+};
 
 / {
    combos {
