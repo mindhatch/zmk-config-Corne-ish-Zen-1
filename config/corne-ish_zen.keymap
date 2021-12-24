@@ -17,6 +17,9 @@
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
+&sk {
+    quick-release;
+}
 
 / {
    combos {
@@ -45,7 +48,7 @@
                 &none   &none &none &none &none &none           &none &none &none &none &none    &none
                 &none   &kp W &kp C &kp M &kp D &none           &none &kp L &kp U &kp O &kp Y    &none
                 &none   &kp R &kp S &kp T &kp H &none           &none &kp N &kp E &kp A &kp I    &none
-                                &none &sl navi1  &sl miaou3             &sq LSHFT &sl number &none
+                                &none &sl navi1  &sl miaou3             &sk LSHFT &sl number &none
                         >;
                 };
                 
