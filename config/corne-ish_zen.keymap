@@ -19,7 +19,7 @@
 };
 &sk {
     quick-release;
-}
+};
 
 / {
    combos {
