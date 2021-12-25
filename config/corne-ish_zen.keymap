@@ -57,7 +57,7 @@
     tapping_term_ms = <0>;
     retro-tap;
     flavor = "hold-preferred";
-    bindings = <&mo>, <&kp>;
+    bindings = <&sl>, <&kp>;
   };
 };
         keymap {
