@@ -69,7 +69,7 @@
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
                 &none   &kp W &kp C &kp M &kp D &none                   &none &kp L &kp U &kp O &kp Y                   &none
                 &none   &kp R &kp S &kp T &kp H &none                   &none &kp N &kp E &kp A &kp I                   &none
-                                &none &key_repeat MO(miaou1)                      &kp SPACE MO( nmbr ) &none
+                                &none &sl  navi  MO(miaou1)                     &kp SPACE MO( nmbr ) &none
                         >;
                 };
                 
