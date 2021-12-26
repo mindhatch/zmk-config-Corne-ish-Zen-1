@@ -57,7 +57,7 @@
     tapping_term_ms = <0>;
     retro-tap;
     flavor = "hold-preferred";
-    bindings = <&sl>, <&kp>;
+    bindings = <&mo>, <&kp>;
   };
 };
         keymap {
@@ -97,8 +97,8 @@
                         label = " navi ";
                         bindings = <
                 &none   &none &none &none &none &none                   &none &none &none &none &none                   &none
-                &none   SK(LALT) SK(LGUI) SK(LSHFT) SK(LCTL)  &none     &none &kp HOME &kp BSPC  &kp DEL  &kp END       &none
-                &none   &kp LEFT &kp DOWN &kp UP    &kp RIGHT &none     &none SK(LCTL) SK(LSHFT) SK(LGUI) SK(LALT)      &none
+                &none   &sk LALT &sk LGUI &sk LSHFT &sk LCTL  &none     &none &kp HOME &kp BSPC  &kp DEL  &kp END       &none
+                &none   &kp LEFT &kp DOWN &kp UP    &kp RIGHT &none     &none &sk LCTL &sk LSHFT &sk LGUI &sk LALT      &none
                                    &none &trans &trans                          &trans &trans &none
                         >;
                 };
